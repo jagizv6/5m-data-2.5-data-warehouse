@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_bikeshare_stations
+    description: "Dimension table for bikeshare stations."
+    columns:
+      - name: station_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
